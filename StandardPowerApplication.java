@@ -7,7 +7,6 @@ public class StandardPowerApplication {
 
         Scanner scanner = new Scanner(System.in);
 
-        // get device.
         Laptop laptop = new Laptop();
         Refrigerator ref = new Refrigerator();
         SmartphoneCharger charger = new SmartphoneCharger();
@@ -19,31 +18,30 @@ public class StandardPowerApplication {
             System.out.println("3. Charge Smartphone");
             System.out.println("4. Exit");
 
-            // to choose user what electronic device she/he wants to plug in.
             System.out.print("Select an option: ");
             int userChoice = getUserChoice(scanner);
             System.out.println();
 
             switch (userChoice) {
-                case 1: // for laptop.
+                case 1: 
                     PowerOutlet laptopOutlet = new LaptopAdapter(laptop);
                     laptopOutlet.plugIn();
                     break;
 
-                case 2: // for refrigerator.
+                case 2: 
                     PowerOutlet refrigeratorOutlet = new RefrigeratorAdapter(ref);
                     refrigeratorOutlet.plugIn();
                     break;
 
-                case 3: // for smartphone charger.
+                case 3: 
                     PowerOutlet smartphoneChargerOutlet = new SmartphoneAdapter(charger);
                     smartphoneChargerOutlet.plugIn();
                     break;
-                case 4: // to exit the program
+                case 4: 
                     System.out.println("Terminate the program");
                     System.exit(0);
                     break;
-                default: // for user input invalid choice.
+                default: 
                     System.out.println("Invalid choice. Please select a valid option (1-4).");
                     break;
             }
