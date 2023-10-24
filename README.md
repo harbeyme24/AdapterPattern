@@ -25,5 +25,5 @@ SmartphoneAdapter - An adapter for plugging a smartphone charger into a standard
 In your solution you must provide the following in your Github link account:
 
   # UML Class Diagram
-
+<img width="974" alt="Screenshot 2023-10-24 at 10 38 13 PM" src="https://github.com/harbeyme24/AdapterPattern/assets/143273418/8cbfaaca-178f-4e98-8aec-954ddebc68bb">
   
